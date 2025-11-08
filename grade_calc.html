@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Grade Calcliator</title>
+
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h2 id="currentHeading" class="gradeCalcHeading">
+            Current Grade
+        </h2>
+        <h2 id="potentialHeading" class="gradeCalcHeading">
+            Potential Grade
+        </h2>
+        <div id="Current">
+            <div class="scroll">
+                <ol id="currentList">
+                </ol>
+            </div>
+            <div class="outcome" onload="calculateGrade()">
+                <h3 id="CurrentGrade" onload="calculateGrade()"></h3>
+
+                <h3 id="CurrentPercent" onload="calculateGrade()"></h3>
+            </div>
+        </div><!--end current-->
+            
+
+        <div id="Potential">
+            <div class="scroll">
+                <ol id="potentialList">
+                </ol>
+            </div>
+            <div class="outcome">
+                <h3 id="PotentialGrade"></h3>
+
+                <h3 id="PotentialPrecent"></h3>
+            </div>
+        </div><!--end potential-->
+        <div id="threeButtons">
+            <button onclick="gotolinkfornow(this)" value="" class="button">
+                Reset
+            </button>
+
+
+            <button onclick="gotolinkspecial(this)" value="adding_assignment.html"class="button">
+                Add
+            </button>
+
+
+            <button onclick="gotolink(this)" value="home.html"class="button">
+                Back
+            </button>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

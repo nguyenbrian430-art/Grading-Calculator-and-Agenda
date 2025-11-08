@@ -1,0 +1,138 @@
+
+body{
+    margin:0 auto;
+    width:1470px;
+    height:800px;
+}
+
+h1,h2,h3,li,legend,label,input,th,.button,p,#specialAh{
+    font-family: "Mansalva", sans-serif;
+}
+
+h1{
+    text-align:center;
+    font-size:100px;
+    margin:0;
+}
+
+#home_button_grade_calc, #home_button_agenda{
+    width:550px;
+    height:540px;
+    background-color:lightgray;
+    font-size:70px;
+}
+
+#home_button_grade_calc{
+    margin:50px 61px 50px 122px;
+}
+
+#home_button_agenda{
+    margin:50px 122px 50px 61px;
+}
+
+.scroll{
+    width:550px;
+    height:440px;
+    background-color:lightgrey;
+    font-size:20px;
+    overflow-y:scroll;
+    overflow-x:scroll;
+    margin:0;
+}
+
+.scroll li{
+    border-bottom:2px solid grey;
+}
+
+
+.gradeCalcHeading{
+    font-size:70px;
+    margin:0;
+    display:inline-block;
+    text-align:center;
+    margin:auto;
+    width:550px;
+}
+
+#potentialHeading{
+    margin:auto 122px 0 61px;
+}
+
+#currentHeading{
+    margin:auto 61px 0 122px;
+}
+
+#Potential{
+    margin:20px 122px 50px 61px;
+    display:inline-block;
+}
+
+#Current{
+    margin:20px 61px 50px 122px;
+    display:inline-block;
+}
+
+#threebuttons{
+    display:inline-block;
+    margin:0 580px;
+}
+
+.button{
+    height: 50px;
+    width: 100px;
+    background-color:lightgrey;
+    display:inline-block;
+    font-size:20px;
+
+}
+
+.button:hover,#home_button_grade_calc:hover,#home_button_agenda:hover{
+    background-color:gray;
+}
+  
+#backButton{
+    margin:0 0 0 50px;
+}
+
+legend{
+    font-size:50px;
+}
+
+#CalenderContainer{
+    height:440px;
+    width:1222px;
+    background-color:lightgray;
+    margin:auto;
+}
+
+#head{
+    height:73.33px;
+    width: 1222px;
+    border-bottom: 2px solid grey;
+}
+
+#head button{
+    margin:25px;
+}
+
+#prevMonth{
+    float:left;
+}
+
+#nextMonth{
+    float:right;
+}
+
+th{
+    height:63.33px;
+    width:174px;
+    border:1px solid grey;
+    font-size:30px;
+    margin:0;
+    
+}
+
+#threebuttonsAgenda{
+    display:inline-block;
+    margin:100px 580px;
+}

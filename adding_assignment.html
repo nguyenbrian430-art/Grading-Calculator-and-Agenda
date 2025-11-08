@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adding Assignments</title>
+
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Adding Assignments</h1>
+
+            <form id="form">
+                <fieldset>
+                    <legend>Assignment</legend>
+
+                    <br>
+
+                    <label for="Tense">Has the assignment been graded? Type 1 for Yes or 0 for No.</label><br>
+                    <input type="number" id="Tense" required> 
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="Name">Assignment Name:</label>
+                    <input type="text" id="Name" required>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="Score">Score Achieved:</label>
+                    <input type="number" id="Score" required>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="Max">Max Score:</label>
+                    <input type="number" id="Max" required>   
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for"Cate">Practice prep or All task? Type 1 for All Task or 0 for Practice Prep.</label> <br>
+                    <input type="number" id="Cate" required>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <button id=specialAh type="submit">Donzo</button>
+                </fieldset>
+            </form>
+
+            <script>
+                dataArray = (JSON.parse(localStorage.getItem('myObject')) || []);
+
+
+                
+                const form = document.getElementById('form');
+                const tense = document.getElementById(Tense);
+                const name = document.getElementById(Name);
+                const score = document.getElementById(Score);
+                const max = document.getElementById(Max);
+                const cate = document.getElementById(Cate);
+
+
+    
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    dataArray = (JSON.parse(localStorage.getItem('myObject')) || []);
+                    
+
+
+                    const tenseValue = Tense.value;
+                    const nameValue = Name.value;
+                    const scoreValue = Score.value;
+                    const maxValue = Max.value;
+                    const cateValue = Cate.value;
+
+
+                    dataArray.push([tenseValue,nameValue,scoreValue,maxValue,cateValue]);
+                    localStorage.setItem('myObject', JSON.stringify(dataArray));
+
+    
+                    // localStorage.setItem('tense-value',tenseValue);
+                    // localStorage.setItem('name-value',nameValue);
+                    // localStorage.setItem('score-value',scoreValue);
+                    // localStorage.setItem('max-value',maxValue);
+                    // localStorage.setItem('cate-value',cateValue);
+
+
+                    window.location.href="grade_calc.html";
+                })
+            </script>
+            
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <button onclick="gotolink(this)" value="grade_calc.html" class="button" id="backButton">
+            Back
+        </button>
+
+        <script src="script.js"></script>
+
+        
+    </body>
+</html>

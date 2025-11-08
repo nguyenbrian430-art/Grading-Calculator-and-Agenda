@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Agenda</title>
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Agenda</h1>
+
+        <div id="CalenderContainer">
+            <div id="Head">
+                <button id="prevMonth">&lt;</button>
+                <h2 id="currentMonthAndYear"></h2>
+                <button id="nextMonth">&gt;</button>
+            </div><!--End Head-->
+                <table id="Calender">
+                    <thead>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody id="days">
+
+                    </tbody>
+                </table>
+            <div id="Body">
+
+            </div> <!--End Body-->
+        </div><!--Calender end-->
+
+        <div id="threeButtonsAgenda">
+            <button onclick="gotolink(this)" value="" class="button">
+                Remove
+            </button>
+
+
+            <button onclick="gotolink(this)" value="adding_event.html" class="button">
+                Add
+            </button>
+
+
+            <button onclick="gotolink(this)" value="home.html" class="button">
+                Back
+            </button>
+
+            <script src="script.js"></script>
+        </div><!--End ThreeButtons-->
+    </body>
+</html>
